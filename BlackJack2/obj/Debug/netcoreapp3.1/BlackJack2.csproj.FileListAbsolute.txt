@@ -1,0 +1,13 @@
+C:\Users\emkno\OneDrive\Documenten\AOmbo\jaar2\csharp\BlackJack2\bin\Debug\netcoreapp3.1\BlackJack2.exe
+C:\Users\emkno\OneDrive\Documenten\AOmbo\jaar2\csharp\BlackJack2\bin\Debug\netcoreapp3.1\BlackJack2.deps.json
+C:\Users\emkno\OneDrive\Documenten\AOmbo\jaar2\csharp\BlackJack2\bin\Debug\netcoreapp3.1\BlackJack2.runtimeconfig.json
+C:\Users\emkno\OneDrive\Documenten\AOmbo\jaar2\csharp\BlackJack2\bin\Debug\netcoreapp3.1\BlackJack2.runtimeconfig.dev.json
+C:\Users\emkno\OneDrive\Documenten\AOmbo\jaar2\csharp\BlackJack2\bin\Debug\netcoreapp3.1\BlackJack2.dll
+C:\Users\emkno\OneDrive\Documenten\AOmbo\jaar2\csharp\BlackJack2\bin\Debug\netcoreapp3.1\BlackJack2.pdb
+C:\Users\emkno\OneDrive\Documenten\AOmbo\jaar2\csharp\BlackJack2\obj\Debug\netcoreapp3.1\BlackJack2.AssemblyInfoInputs.cache
+C:\Users\emkno\OneDrive\Documenten\AOmbo\jaar2\csharp\BlackJack2\obj\Debug\netcoreapp3.1\BlackJack2.AssemblyInfo.cs
+C:\Users\emkno\OneDrive\Documenten\AOmbo\jaar2\csharp\BlackJack2\obj\Debug\netcoreapp3.1\BlackJack2.csproj.CoreCompileInputs.cache
+C:\Users\emkno\OneDrive\Documenten\AOmbo\jaar2\csharp\BlackJack2\obj\Debug\netcoreapp3.1\BlackJack2.dll
+C:\Users\emkno\OneDrive\Documenten\AOmbo\jaar2\csharp\BlackJack2\obj\Debug\netcoreapp3.1\BlackJack2.pdb
+C:\Users\emkno\OneDrive\Documenten\AOmbo\jaar2\csharp\BlackJack2\obj\Debug\netcoreapp3.1\BlackJack2.genruntimeconfig.cache
+C:\Users\emkno\OneDrive\Documenten\AOmbo\jaar2\csharp\BlackJack2\obj\Debug\netcoreapp3.1\BlackJack2.csproj.AssemblyReference.cache
