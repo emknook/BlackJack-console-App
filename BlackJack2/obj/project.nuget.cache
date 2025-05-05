@@ -1,10 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "tYwrcqw9/Ap6xmx8DY8p+gspnpuzS8eNK2Bfl7UbZuNHwswkPyU6u9BX0h18irf8ASysXFGVOzTBhU/aLB8mOQ==",
+  "dgSpecHash": "u98jWk/d490=",
   "success": true,
-  "projectFilePath": "C:\\Users\\emkno\\OneDrive\\Documenten\\AOmbo\\jaar2\\csharp\\BlackJack2\\BlackJack2.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\emkno\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.18\\microsoft.netcore.app.host.win-x64.3.1.18.nupkg.sha512"
-  ],
+  "projectFilePath": "C:\\Users\\emkno\\OneDrive\\Documenten\\Portfolio\\BlackJack-console-App\\BlackJack2\\BlackJack2.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }

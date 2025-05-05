@@ -7,16 +7,69 @@ namespace BlackJack {
         private Deck d;
         private List<Player> players;
         private Hand dealer;
+        private Boolean playing;
         public BlackJack() {
             Initialize();
-            Console.Clear();
-            PlayerRounds();
-            Console.Clear();
-            DealerFinish();
-            Finish();
-            //play again?
-            //reset hands
-            //loop
+            playing = true;
+            while(playing) { 
+                Console.Clear();
+                PlayerRounds();
+                Console.Clear();
+                DealerFinish();
+                Finish();
+                Replay();
+                if (players.Count == 0)
+                {
+                    Console.Clear();
+                    Console.WriteLine("Thank you for playing!");
+                    Console.WriteLine("Would you like to play again with different players?"); 
+                    string answer = Console.ReadLine();
+                    switch (answer)
+                    {
+                        case "yes":
+                        case "y":
+                            Console.WriteLine("How fun!");
+                            Initialize();
+                            break;
+                        default:
+                            playing = false;
+                            break;
+                    }
+                }
+            }
+        }
+
+        private void Replay()
+        {
+            List<Player> playersToDelete = new List<Player>();
+            foreach (Player p in players)
+            {
+                Console.WriteLine(p.GetName() + ", would you like to play another round?"); 
+                string answer = Console.ReadLine();
+                switch (answer)
+                {
+                    case "yes":
+                    case "y":
+                        Console.WriteLine("How fun!");
+                        p.GetHands().Clear();
+                        break;
+                    default:
+                        FinishPlayer(p);
+                        playersToDelete.Add(p);
+                        break;
+                }
+            }
+            foreach (Player p in playersToDelete)
+            {
+                players.Remove(p);
+            }
+
+        }
+
+        private void FinishPlayer(Player p)
+        {
+            Console.WriteLine(p.GetName() + ", thank you for playing! You walk away with a balance of:" + p.GetBalance());
+
         }
 
         private void Finish() {
@@ -60,6 +113,20 @@ namespace BlackJack {
         }
 
         private void PlayerRounds() {
+            AskBets();
+            dealer = new Hand(0);
+            Console.WriteLine("Dealer gets two cards:");
+            dealer.Add(d.GetCard(true));
+            dealer.Add(d.GetCard(false));
+            foreach (Player p in players)
+            {
+                foreach (Hand h in p.GetHands())
+                {
+                    Console.WriteLine(p.GetName());
+                    h.Add(d.GetCard(false));
+                    h.Add(d.GetCard(false));
+                }
+            }
             foreach (Player p in players) {
                 Console.WriteLine(p.GetName() + ", it's your turn!");
                 Round(p);
@@ -191,18 +258,6 @@ namespace BlackJack {
             d = new Deck(amount);
             players = new List<Player>();
             AddPlayers();
-            AskBets();
-            dealer = new Hand(0);
-            Console.WriteLine("Dealer gets two cards:");
-            dealer.Add(d.GetCard(true));
-            dealer.Add(d.GetCard(false));
-            foreach (Player p in players) {
-                foreach (Hand h in p.GetHands()) {
-                    Console.WriteLine(p.GetName());
-                    h.Add(d.GetCard(false));
-                    h.Add(d.GetCard(false));
-                }
-            }
         }
 
         private void AskBets() {
